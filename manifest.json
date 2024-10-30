@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "RefreshPreventer",
+  "version": "1.0",
+  "description": "A Chrome extension for YouTube.",
+  "host_permissions": [
+    "https://*.youtube.com/*",
+    "http://*.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
